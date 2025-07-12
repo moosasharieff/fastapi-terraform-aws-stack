@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.env
+*.venv/
+.env
+.venv/
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# FastAPI/Uvicorn logs
+*.log
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+terraform.tfvars
+*.tfplan
+.plan
+
+# IDEs
+# PyCharm / IntelliJ
+.idea/
+*.iml
+
+# macOS
+.DS_Store
+
+# VSCode (if used)
+.vscode/
