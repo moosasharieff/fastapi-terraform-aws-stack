@@ -10,3 +10,9 @@ module "ec2-key" {
 
   project = var.project
 }
+
+module "vpc" {
+  source = "./modules/vpc"
+
+  project = var.project
+}
