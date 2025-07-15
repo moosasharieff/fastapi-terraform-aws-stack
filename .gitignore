@@ -25,6 +25,7 @@ crash.log
 terraform.tfvars
 *.tfplan
 .plan
+private-key.pem
 
 # IDEs
 # PyCharm / IntelliJ

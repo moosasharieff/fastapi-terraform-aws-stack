@@ -18,14 +18,26 @@ resource "aws_internet_gateway" "igw" {
   }
 }
 
-resource "aws_subnet" "private" {
+resource "aws_subnet" "private_a" {
   vpc_id = aws_vpc.main.id
   cidr_block = "10.0.2.0/24"
   availability_zone = "eu-west-1a"
 
   tags = {
-    Name = "${var.project}-private-subnet"
+    Name = "${var.project}-private-subnet-a"
   }
+
+}
+
+resource "aws_subnet" "private_b" {
+  vpc_id = aws_vpc.main.id
+  cidr_block = "10.0.3.0/24"
+  availability_zone =  "eu-west-1b"
+
+  tags = {
+    Name = "${var.project}-private-subnet-b"
+  }
+
 
 }
 
